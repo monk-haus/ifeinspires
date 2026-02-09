@@ -18,7 +18,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "IfeInspires — Inspiration Meets Execution.",
+  title: "Ife Inspires — Inspiration Meets Execution.",
   description:
     "Ife Oyelade is a digital transformation leader, speaker, leadership coach, and community mentor. Empowering changemakers to turn inspiration into action.",
   keywords: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "Affrism",
   ],
   openGraph: {
-    title: "IfeInspires — Inspiration Meets Execution.",
+    title: "Ife Inspires — Inspiration Meets Execution.",
     description:
       "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
     url: "https://ifeinspires.com",
