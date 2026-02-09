@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import ifeAbout from "@/assets/images/ife-about.jpg";
 
 export default function About() {
     const sectionRef = useRef<HTMLElement>(null);
@@ -42,11 +43,10 @@ export default function About() {
                 <div className="about-image-col reveal">
                     <div className="about-image-frame">
                         <Image
-                            src="/assets/images/ife-about.jpg"
+                            src={ifeAbout}
                             alt="Ife Oyelade speaking at a workshop"
-                            fill
                             sizes="(max-width: 1024px) 100vw, 45vw"
-                            style={{ objectFit: "cover", objectPosition: "center" }}
+                            className="about-img"
                         />
                     </div>
                     <div className="about-image-accent" aria-hidden="true" />

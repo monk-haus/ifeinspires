@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ifeHero from "@/assets/images/ife-hero.jpg";
 
 export default function Hero() {
     return (
@@ -40,12 +41,11 @@ export default function Hero() {
                 <div className="hero-image-bg" aria-hidden="true" />
                 <div className="hero-image-container">
                     <Image
-                        src="/assets/images/ife-hero.jpg"
+                        src={ifeHero}
                         alt="Ife Oyelade — Digital Transformation Leader and Speaker"
-                        fill
                         priority
                         sizes="(max-width: 1024px) 100vw, 50vw"
-                        style={{ objectFit: "cover", objectPosition: "center top" }}
+                        className="hero-img"
                     />
                 </div>
             </div>

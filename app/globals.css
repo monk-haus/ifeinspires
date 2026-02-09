@@ -2703,3 +2703,73 @@ body {
         width: 12% !important;
     }
 }
+/* --- Image Aspect Ratio Fixes --- */
+
+/* Default Desktop Styles for Imported Images */
+.about-img,
+.press-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+}
+
+/* Tablet/Mobile Overrides - Force Real Aspect Ratio */
+@media (max-width: 1024px) {
+    /* Hero */
+    .hero-image-wrapper,
+    .hero-image-container {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    .hero-img {
+        height: auto !important;
+        object-fit: contain;
+    }
+
+    /* Press */
+    .press-image-frame {
+        aspect-ratio: auto !important;
+        height: auto !important;
+        max-height: none !important;
+    }
+    .press-img {
+        height: auto !important;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 640px) {
+    /* About */
+    .about-image-col,
+    .about-image-frame {
+        aspect-ratio: auto !important;
+        height: auto !important;
+        max-height: none !important;
+        max-width: none !important; 
+    }
+    .about-img {
+        height: auto !important;
+        object-fit: contain;
+    }
+    
+    /* Ensure existing constraints are overridden */
+    .hero-image-wrapper {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+    
+    .press-image-frame {
+        aspect-ratio: auto !important;
+        max-height: none !important; 
+    }
+}

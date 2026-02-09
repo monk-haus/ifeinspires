@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import ifePress from "@/assets/images/ife-press.jpg";
 
 export default function PressKit() {
     const sectionRef = useRef<HTMLElement>(null);
@@ -30,11 +31,10 @@ export default function PressKit() {
                 <div className="press-image-col reveal">
                     <div className="press-image-frame">
                         <Image
-                            src="/assets/images/ife-press.jpg"
+                            src={ifePress}
                             alt="Ife Oyelade — press and media"
-                            fill
                             sizes="(max-width: 1024px) 100vw, 40vw"
-                            style={{ objectFit: "cover", objectPosition: "center" }}
+                            className="press-img"
                         />
                         <div className="press-image-overlay" aria-hidden="true" />
                     </div>
