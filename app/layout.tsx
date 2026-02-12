@@ -27,7 +27,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://ifeinspires.com"),
   title: {
-    default: "Ife Inspires — Strategist. Speaker. Builder.",
+    default: "Ife Inspires — Inspiration meets execution.",
     template: "%s | Ife Inspires",
   },
   description:
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Ife Inspires — Strategist. Speaker. Builder.",
+    title: "Ife Inspires — Inspiration meets execution.",
     description:
       "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
     url: "https://ifeinspires.com",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ife Inspires — Strategist. Speaker. Builder.",
+    title: "Ife Inspires — Inspiration meets execution.",
     description:
       "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
     creator: "@ifeinspires",
@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   verification: {
-    google: "verification_token", // Placeholder, user needs to add this
+    google: "verification_token",
   },
 };
 
