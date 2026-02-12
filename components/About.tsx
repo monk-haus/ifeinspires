@@ -31,7 +31,7 @@ export default function About() {
 
             <div className="about-quote-block reveal">
                 <blockquote className="about-quote">
-                    <span className="about-quote-mark" aria-hidden="true">"</span>
+                    <span className="about-quote-mark" aria-hidden="true">&quot;</span>
                     I don&apos;t just talk about innovation, I make it tangible because when we
                     match intention with execution, we don&apos;t just shift
                     conversations — we shift outcomes.
