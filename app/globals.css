@@ -309,10 +309,11 @@ body {
     transition-delay: 0.4s;
 }
 
+/* FIX APPLIED HERE: Using min-height instead of strict height */
 .hero {
     position: relative;
-    height: 100vh;
-    height: 100dvh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
@@ -2378,9 +2379,13 @@ body {
         right: var(--section-padding-x);
     }
 
+    /* FIX APPLIED HERE: Added height/min-height resets for mobile */
     .hero {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1fr;
+        height: auto;
+        min-height: 100vh;
+        min-height: 100dvh;
     }
 
     .hero-content {
