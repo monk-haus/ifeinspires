@@ -18,7 +18,7 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://ifeinspires.com"),
+    metadataBase: new URL("https://www.ifeinspires.com"),
     title: {
         default: "Ife Inspires — Inspiration Meets Execution",
         template: "%s | Ife Inspires",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         "Women in Leadership",
         "Black Women Leaders",
     ],
-    authors: [{ name: "Ife Oyelade", url: "https://ifeinspires.com" }],
+    authors: [{ name: "Ife Oyelade", url: "https://www.ifeinspires.com" }],
     creator: "Ife Oyelade",
     publisher: "Ife Oyelade",
     robots: {
@@ -56,13 +56,13 @@ export const metadata: Metadata = {
         title: "Ife Inspires — Inspiration Meets Execution",
         description:
             "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
-        url: "https://ifeinspires.com",
+        url: "https://www.ifeinspires.com",
         siteName: "Ife Inspires",
         locale: "en_US",
         type: "website",
         images: [
             {
-                url: "https://ifeinspires.com/opengraph-image.jpg",
+                url: "https://www.ifeinspires.com/opengraph-image.jpg",
                 width: 1200,
                 height: 630,
                 alt: "Ife Inspires — Inspiration Meets Execution",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
         description:
             "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
         creator: "@ifeinspires",
-        images: ["https://ifeinspires.com/opengraph-image.jpg"],
+        images: ["https://www.ifeinspires.com/opengraph-image.jpg"],
     },
     icons: {
         icon: "/favicon.ico",
@@ -92,12 +92,12 @@ const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Ife Oyelade",
-    url: "https://ifeinspires.com",
-    image: "https://ifeinspires.com/opengraph-image.jpg",
+    url: "https://www.ifeinspires.com",
+    image: "https://www.ifeinspires.com/opengraph-image.jpg",
     sameAs: [
         "https://www.instagram.com/ifeinspiresco",
         "https://www.linkedin.com/in/ifeoyelade",
-        "https://ifeinspires.com",
+        "https://www.ifeinspires.com",
     ],
     jobTitle: ["Digital Transformation Leader", "Speaker", "Strategist"],
     worksFor: {
