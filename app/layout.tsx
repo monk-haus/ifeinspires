@@ -60,6 +60,14 @@ export const metadata: Metadata = {
         siteName: "Ife Inspires",
         locale: "en_US",
         type: "website",
+        images: [
+            {
+                url: "https://ifeinspires.com/opengraph-image.jpg",
+                width: 1200,
+                height: 630,
+                alt: "Ife Inspires — Inspiration Meets Execution",
+            },
+        ],
     },
     twitter: {
         card: "summary_large_image",
@@ -67,6 +75,7 @@ export const metadata: Metadata = {
         description:
             "Empowering changemakers to turn inspiration into action through keynotes, workshops, strategy sessions, and mentorship.",
         creator: "@ifeinspires",
+        images: ["https://ifeinspires.com/opengraph-image.jpg"],
     },
     icons: {
         icon: "/favicon.ico",
@@ -107,6 +116,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${playfair.variable} ${sora.variable}`}>
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+                />
                 {children}
             </body>
         </html>
