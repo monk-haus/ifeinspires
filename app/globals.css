@@ -2206,6 +2206,135 @@ body {
     opacity: 0.7;
 }
 
+.gallery {
+    position: relative;
+    background: var(--ivory);
+    color: var(--off-black);
+    padding: var(--section-padding-y) var(--section-padding-x);
+    overflow: hidden;
+}
+
+.gallery-top-line {
+    position: absolute;
+    top: 0;
+    left: var(--section-padding-x);
+    right: var(--section-padding-x);
+    height: 1px;
+    background: linear-gradient(to right,
+            transparent,
+            var(--gold),
+            var(--gold),
+            transparent);
+    opacity: 0.4;
+}
+
+.gallery-header {
+    text-align: center;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+}
+
+.gallery-label {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold-dim);
+    margin-bottom: 0.75rem;
+}
+
+.gallery-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--teal);
+}
+
+.gallery-title span {
+    color: var(--gold-dim);
+    font-style: italic;
+}
+
+.gallery-viewer {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.gallery-main {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--teal-deep);
+    margin-bottom: 0.75rem;
+}
+
+.gallery-main-img {
+    object-fit: contain;
+    object-position: center;
+    animation: galleryFadeIn 0.35s var(--ease-out-expo) forwards;
+}
+
+@keyframes galleryFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+}
+
+.gallery-thumb {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background: var(--teal-deep);
+    border: 2px solid transparent;
+    cursor: pointer;
+    padding: 0;
+    transition: border-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.55;
+}
+
+.gallery-thumb:hover {
+    opacity: 0.85;
+}
+
+.gallery-thumb--active {
+    border-color: var(--gold);
+    opacity: 1;
+}
+
+.gallery-thumb-img {
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 0.5s var(--ease-out-expo);
+}
+
+.gallery-thumb:hover .gallery-thumb-img {
+    transform: scale(1.06);
+}
+
+@media (max-width: 640px) {
+    .gallery-main {
+        aspect-ratio: 1 / 1;
+    }
+
+    .gallery-thumbs {
+        gap: 0.5rem;
+    }
+}
+
 .footer {
     position: relative;
     background: var(--teal-deep);

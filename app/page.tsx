@@ -6,6 +6,7 @@ import Services from "@/components/Services";
 import Topics from "@/components/Topics";
 import PressKit from "@/components/PressKit";
 import Booking from "@/components/Booking";
+import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
       <Topics />
       <PressKit />
       <Booking />
+      <Gallery />
       <Footer />
     </>
   );
